@@ -50,24 +50,6 @@
   flex-wrap: wrap;
   gap: var(--space-m);
 }
-.stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-l) var(--space-4xl);
-  margin: 0;
-}
-.stat {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: var(--space-xs);
-}
-.stat-value {
-  margin: 0;
-  color: var(--text-brand-on-hero);
-}
-.stat-label {
-  color: var(--text-gray-default);
-}
 .hero-visual {
   position: relative;
   flex-shrink: 0;
