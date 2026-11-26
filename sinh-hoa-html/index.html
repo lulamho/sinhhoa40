@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinh Hoá 4.0 — Học Sinh học cùng Thầy Khánh</title>
+  <meta name="description" content="Lộ trình luyện thi Sinh học TN THPT, HSG và Chuyên Sinh, đề thi thử chuẩn cấu trúc và góc kiến thức Sinh học.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo" aria-label="Sinh Hoa 4.0 — Trang chủ">
+        <img src="assets/logo-symbol.webp" class="logo__symbol" width="32" height="32" alt="">
+        <img src="assets/logo-wordmark.svg" class="logo__wordmark" alt="Sinh Hoa 4.0">
+      </a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <a href="index.html" class="main-nav__item t-body-m-med is-active" aria-current="page"><img src="assets/nav-home.svg" width="20" height="20" alt="">Trang chủ</a>
+        <a href="khoa-hoc.html" class="main-nav__item t-body-m-med"><img src="assets/nav-courses.svg" width="20" height="20" alt="">Khoá học</a>
+        <a href="index.html#de-thi-thu" class="main-nav__item t-body-m-med"><img src="assets/nav-exams.svg" width="20" height="20" alt="">Đề thi thử</a>
+        <a href="index.html#goc-kien-thuc" class="main-nav__item t-body-m-med"><img src="assets/nav-knowledge.svg" width="20" height="20" alt="">Góc kiến thức</a>
+        <a href="#" class="main-nav__item t-body-m-med"><img src="assets/nav-community.svg" width="20" height="20" alt="">Cộng đồng</a>
+      </nav>
+      <div class="site-header__actions">
+        <button type="button" class="site-header__search" aria-label="Tìm kiếm"><img src="assets/icon-search.svg" width="24" height="24" alt=""></button>
+        <button type="button" class="site-header__login t-button-l">Đăng nhập</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-banner">
+          <div class="hero-content">
+            <span class="eyebrow t-caption-sb"><img src="assets/icon-sparkle.svg" width="16" height="16" alt="">Luyện thi TN THPT 2027 · HSG · Chuyên Sinh</span>
+            <div class="hero-text">
+              <h1 id="hero-title" class="hero-title t-heading-xl">Chinh phục Sinh học, vững kiến thức, chắc điểm 9+</h1>
+              <p class="hero-description t-body-l">Lộ trình luyện thi bài bản từ lớp 10 đến 12, đề thi thử chuẩn cấu trúc mới và kho kiến thức Sinh học thường thức — tất cả ở một nơi.</p>
+            </div>
+            <div class="hero-cta">
+              <a href="khoa-hoc.html" class="btn btn--filled btn--l"><span class="t-button-l">Khám phá khoá học</span><img src="assets/icon-arrow-forward-white.svg" width="24" height="24" alt=""></a>
+              <a href="#de-thi-thu" class="btn btn--ghost btn--l"><span class="t-button-l">Thi thử miễn phí</span></a>
+            </div>
+            <dl class="stats">
+              <div class="stat"><dt class="stat-label t-caption">Học sinh theo học</dt><dd class="stat-value t-heading-s">15.000+</dd></div>
+              <div class="stat"><dt class="stat-label t-caption">Đề thi &amp; câu hỏi</dt><dd class="stat-value t-heading-s">1.200+</dd></div>
+              <div class="stat"><dt class="stat-label t-caption">Học sinh đạt 8+ môn Sinh</dt><dd class="stat-value t-heading-s">98%</dd></div>
+            </dl>
+          </div>
+          <div class="hero-visual">
+            <img src="assets/hero-home.webp" class="hero-image" alt="Thầy giáo hướng dẫn học sinh quan sát kính hiển vi">
+            <div class="floating-card">
+              <span class="trophy-tile"><img src="assets/icon-trophy.svg" width="24" height="24" alt=""></span>
+              <span class="floating-text">
+                <span class="t-body-l-sb">Thủ khoa Sinh học 2025</span>
+                <span class="floating-sub t-caption">10 điểm tuyệt đối · 32 học sinh</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dots" aria-hidden="true">
+        <span class="dot is-active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- Đội ngũ giáo viên -->
+    <section id="doi-ngu" class="section" aria-labelledby="teachers-title">
+      <div class="container section-inner">
+        <div class="section-header">
+          <div class="section-header__heading">
+            <h2 id="teachers-title" class="t-heading-m">Đội ngũ <span class="section-header__accent">Giáo viên tâm huyết</span></h2>
+            <p class="section-header__desc t-body-l">Những thầy cô giàu kinh nghiệm luyện thi Sinh học, luôn đồng hành cùng các em trên hành trình chinh phục điểm cao.</p>
+          </div>
+          <div class="section-header__actions">
+            <a href="#" class="see-all t-button-l">Xem tất cả <img src="assets/icon-chevron-right-brand.svg" width="24" height="24" alt=""></a>
+            <div class="arrows">
+              <button type="button" class="icon-btn" data-carousel="teachers-track" data-dir="-1" aria-label="Trước"><img src="assets/icon-chevron-left-circle.svg" width="24" height="24" alt=""></button>
+              <button type="button" class="icon-btn" data-carousel="teachers-track" data-dir="1" aria-label="Tiếp"><img src="assets/icon-chevron-right-circle.svg" width="24" height="24" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel" id="teachers-track" role="list" aria-label="Giáo viên">
+          <article class="teacher-card" role="listitem">
+            <img src="assets/teacher-1.webp" class="teacher-card__photo" alt="Thầy Khánh" loading="lazy">
+            <div class="teacher-card__body">
+              <h3 class="t-body-l-sb">Thầy Khánh</h3>
+              <p class="teacher-card__role t-caption">Chuyên đề Di truyền &amp; Tiến hoá</p>
+            </div>
+          </article>
+          <article class="teacher-card" role="listitem">
+            <img src="assets/teacher-2.webp" class="teacher-card__photo" alt="Cô Ngọc Lan" loading="lazy">
+            <div class="teacher-card__body">
+              <h3 class="t-body-l-sb">Cô Ngọc Lan</h3>
+              <p class="teacher-card__role t-caption">Sinh học tế bào &amp; Vi sinh vật</p>
+            </div>
+          </article>
+          <article class="teacher-card" role="listitem">
+            <img src="assets/teacher-3.webp" class="teacher-card__photo" alt="Thầy Minh Đức" loading="lazy">
+            <div class="teacher-card__body">
+              <h3 class="t-body-l-sb">Thầy Minh Đức</h3>
+              <p class="teacher-card__role t-caption">Sinh lý thực vật &amp; động vật</p>
+            </div>
+          </article>
+          <article class="teacher-card" role="listitem">
+            <img src="assets/teacher-4.webp" class="teacher-card__photo" alt="Cô Thu Hà" loading="lazy">
+            <div class="teacher-card__body">
+              <h3 class="t-body-l-sb">Cô Thu Hà</h3>
+              <p class="teacher-card__role t-caption">Luyện thi HSG &amp; Chuyên Sinh</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Khoá học luyện thi -->
+    <section class="section courses-section" aria-labelledby="courses-title">
+      <div class="container section-inner">
+        <div class="section-header">
+          <div class="section-header__heading">
+            <h2 id="courses-title" class="t-heading-m">Khoá học <span class="section-header__accent">Luyện thi</span></h2>
+            <p class="section-header__desc t-body-l">Lộ trình luyện thi TN THPT Sinh 10, 11, 12 và bồi dưỡng Học sinh giỏi, ôn thi vào lớp 10 Chuyên Sinh.</p>
+          </div>
+          <div class="section-header__actions">
+            <a href="khoa-hoc.html" class="see-all t-button-l">Xem tất cả <img src="assets/icon-chevron-right-brand.svg" width="24" height="24" alt=""></a>
+            <div class="arrows">
+              <button type="button" class="icon-btn" data-carousel="courses-track" data-dir="-1" aria-label="Trước"><img src="assets/icon-chevron-left-circle.svg" width="24" height="24" alt=""></button>
+              <button type="button" class="icon-btn" data-carousel="courses-track" data-dir="1" aria-label="Tiếp"><img src="assets/icon-chevron-right-circle.svg" width="24" height="24" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <div class="tabs" role="group" aria-label="Lọc khoá học" data-tabs="home-courses">
+            <button type="button" class="tab is-active" aria-pressed="true" data-value="Tất cả">Tất cả</button>
+            <button type="button" class="tab" aria-pressed="false" data-value="Luyện thi TN THPT">Luyện thi TN THPT</button>
+            <button type="button" class="tab" aria-pressed="false" data-value="Sinh 10">Sinh 10</button>
+            <button type="button" class="tab" aria-pressed="false" data-value="Sinh 11">Sinh 11</button>
+            <button type="button" class="tab" aria-pressed="false" data-value="Sinh 12">Sinh 12</button>
+            <button type="button" class="tab" aria-pressed="false" data-value="HSG &amp; Chuyên Sinh">HSG &amp; Chuyên Sinh</button>
+          </div>
+          <div class="carousel" id="courses-track" role="list" aria-label="Khoá học luyện thi">
+            <a href="khoa-hoc.html" class="course-card" role="listitem" data-tags="Luyện thi TN THPT|Sinh 10">
+              <div class="cover">
+                <img src="assets/thumb-sinh10.webp" class="cover__img" alt="" loading="lazy">
+                <div class="cover__top">
+                  <span class="cover__eyebrow t-caption-sb">LUYỆN THI TN THPT</span>
+                </div>
+                <span class="cover__title t-heading-m">SINH 10</span>
+              </div>
+              <div class="course-card__body">
+                <span class="chip chip--lime t-caption-sb">Sinh học 10</span>
+                <h3 class="t-body-l-sb">Nền tảng Sinh học 10 – Tế bào &amp; Vi sinh vật</h3>
+                <div class="meta">
+                  <span class="meta__item t-caption"><img src="assets/icon-play.svg" width="16" height="16" alt="">36 bài giảng</span>
+                  <span class="meta__item t-caption"><img src="assets/icon-clock.svg" width="16" height="16" alt="">5 tháng</span>
+                </div>
+                <hr class="divider">
+                <div class="card-footer">
+                  <span class="teacher t-caption-med"><img src="assets/hero-home.webp" class="avatar" width="28" height="28" alt="">Thầy Khánh</span>
+                  <span class="price t-body-l-b">990.000đ</span>
+                </div>
+              </div>
+            </a>
+            <a href="khoa-hoc.html" class="course-card" role="listitem" data-tags="Luyện thi TN THPT|Sinh 11">
+              <div class="cover">
+                <img src="assets/thumb-sinh11.webp" class="cover__img" alt="" loading="lazy">
+                <div class="cover__top">
+                  <span class="cover__eyebrow t-caption-sb">LUYỆN THI TN THPT</span>
+                </div>
+                <span class="cover__title t-heading-m">SINH 11</span>
+              </div>
+              <div class="course-card__body">
+                <span class="chip chip--lavender t-caption-sb">Sinh học 11</span>
+                <h3 class="t-body-l-sb">Sinh học 11 – Chuyển hoá vật chất &amp; năng lượng</h3>
+                <div class="meta">
+                  <span class="meta__item t-caption"><img src="assets/icon-play.svg" width="16" height="16" alt="">42 bài giảng</span>
+                  <span class="meta__item t-caption"><img src="assets/icon-clock.svg" width="16" height="16" alt="">5 tháng</span>
+                </div>
+                <hr class="divider">
+                <div class="card-footer">
+                  <span class="teacher t-caption-med"><img src="assets/hero-home.webp" class="avatar" width="28" height="28" alt="">Thầy Khánh</span>
+                  <span class="price t-body-l-b">1.090.000đ</span>
+                </div>
+              </div>
+            </a>
+            <a href="khoa-hoc.html" class="course-card" role="listitem" data-tags="Luyện thi TN THPT|Sinh 12">
+              <div class="cover">
+                <img src="assets/thumb-sinh12.webp" class="cover__img" alt="" loading="lazy">
+                <div class="cover__top">
+                  <span class="cover__eyebrow t-caption-sb">LUYỆN THI TN THPT</span>
+                  <span class="badge-hot t-caption-sb"><img src="assets/icon-flame.svg" width="12" height="12" alt="">Hot</span>
+                </div>
+                <span class="cover__title t-heading-m">SINH 12</span>
+              </div>
+              <div class="course-card__body">
+                <span class="chip chip--blue t-caption-sb">Sinh học 12</span>
+                <h3 class="t-body-l-sb">Tổng ôn &amp; luyện đề TN THPT môn Sinh học 12</h3>
+                <div class="meta">
+                  <span class="meta__item t-caption"><img src="assets/icon-play.svg" width="16" height="16" alt="">48 bài giảng</span>
+                  <span class="meta__item t-caption"><img src="assets/icon-clock.svg" width="16" height="16" alt="">6 tháng</span>
+                </div>
+                <hr class="divider">
+                <div class="card-footer">
+                  <span class="teacher t-caption-med"><img src="assets/hero-home.webp" class="avatar" width="28" height="28" alt="">Thầy Khánh</span>
+                  <span class="price t-body-l-b">1.290.000đ</span>
+                </div>
+              </div>
+            </a>
+            <a href="khoa-hoc.html" class="course-card" role="listitem" data-tags="HSG &amp; Chuyên Sinh">
+              <div class="cover">
+                <img src="assets/thumb-chuyen-sinh.webp" class="cover__img" alt="" loading="lazy">
+                <div class="cover__top">
+                  <span class="cover__eyebrow t-caption-sb">HSG · THI VÀO 10</span>
+                  <span class="badge-hot t-caption-sb"><img src="assets/icon-flame.svg" width="12" height="12" alt="">Hot</span>
+                </div>
+                <span class="cover__title t-heading-m">CHUYÊN SINH</span>
+              </div>
+              <div class="course-card__body">
+                <span class="chip chip--volcano t-caption-sb">HSG &amp; Chuyên</span>
+                <h3 class="t-body-l-sb">Luyện thi HSG &amp; ôn thi vào lớp 10 Chuyên Sinh</h3>
+                <div class="meta">
+                  <span class="meta__item t-caption"><img src="assets/icon-play.svg" width="16" height="16" alt="">60 bài giảng</span>
+                  <span class="meta__item t-caption"><img src="assets/icon-clock.svg" width="16" height="16" alt="">8 tháng</span>
+                </div>
+                <hr class="divider">
+                <div class="card-footer">
+                  <span class="teacher t-caption-med"><img src="assets/hero-home.webp" class="avatar" width="28" height="28" alt="">Thầy Khánh</span>
+                  <span class="price t-body-l-b">1.590.000đ</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Đề thi thử -->
+    <section id="de-thi-thu" class="section" aria-labelledby="exams-title">
+      <div class="container section-inner">
+        <div class="section-header">
+          <div class="section-header__heading">
+            <h2 id="exams-title" class="t-heading-m">Đề thi thử <span class="section-header__accent">Sinh học</span></h2>
+            <p class="section-header__desc t-body-l">Đề thi thử theo chuyên đề Sinh 10, 11, 12 và bộ đề luyện tổng hợp Sinh 12 chuẩn cấu trúc TN THPT.</p>
+          </div>
+          <div class="section-header__actions">
+            <a href="#" class="see-all t-button-l">Xem tất cả <img src="assets/icon-chevron-right-brand.svg" width="24" height="24" alt=""></a>
+          </div>
+        </div>
+        <div class="list">
+          <div class="tabs" role="group" aria-label="Lọc đề thi" data-tabs="home-exams">
+            <button type="button" class="tab is-active" aria-pressed="true" data-value="Tất cả">Tất cả</button>
+            <button type="button" class="tab" aria-pressed="false" data-value="Chuyên đề Sinh 10">Chuyên đề Sinh 10</button>
+            <button type="button" class="tab" aria-pressed="false" data-value="Chuyên đề Sinh 11">Chuyên đề Sinh 11</button>
+            <button type="button" class="tab" aria-pressed="false" data-value="Chuyên đề Sinh 12">Chuyên đề Sinh 12</button>
+            <button type="button" class="tab" aria-pressed="false" data-value="Luyện đề tổng hợp Sinh 12">Luyện đề tổng hợp Sinh 12</button>
+          </div>
+          <div class="exam-grid">
+            <article class="featured-exam" data-featured>
+              <div class="featured-content">
+                <p class="featured-eyebrow t-caption-sb">LUYỆN ĐỀ TỔNG HỢP · SINH 12</p>
+                <h3 class="t-heading-s">Bộ 30 đề luyện tổng hợp Sinh 12 chuẩn cấu trúc 2027</h3>
+                <p class="featured-description t-body-m">Có lời giải chi tiết, chấm điểm tức thì và phân tích chuyên đề còn yếu sau mỗi bài làm.</p>
+                <ul class="highlights">
+                  <li class="t-body-m-med"><img src="assets/icon-check-circle.svg" width="20" height="20" alt="">40 câu · 50 phút mỗi đề</li>
+                  <li class="t-body-m-med"><img src="assets/icon-check-circle.svg" width="20" height="20" alt="">Xếp hạng toàn quốc sau mỗi lần thi</li>
+                  <li class="t-body-m-med"><img src="assets/icon-check-circle.svg" width="20" height="20" alt="">Video chữa đề chi tiết</li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn--filled btn--l btn--full"><span class="t-button-l">Vào thi ngay</span><img src="assets/icon-arrow-forward-white.svg" width="24" height="24" alt=""></a>
+            </article>
+            <div class="exam-cards">
+              <article class="exam-card" data-grade="Sinh 10">
+                <div class="exam-card__top">
+                  <span class="icon-tile icon-tile--lime"><img src="assets/dna-lime.svg" width="21.33" height="21.33" alt=""></span>
+                  <div class="exam-card__info">
+                    <span class="chip chip--lime t-caption-sb">Sinh 10</span>
+                    <span class="exam-card__topic t-caption">Chuyên đề 1</span>
+                  </div>
+                </div>
+                <div class="exam-card__main">
+                  <h3 class="t-body-l-sb">Thành phần hoá học của tế bào</h3>
+                  <div class="meta">
+                    <span class="meta__item t-caption"><img src="assets/icon-docs.svg" width="16" height="16" alt="">40 câu</span>
+                    <span class="meta__item t-caption"><img src="assets/icon-timer.svg" width="16" height="16" alt="">50 phút</span>
+                    <span class="meta__item t-caption"><img src="assets/icon-person.svg" width="16" height="16" alt="">1.2k lượt thi</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn--outline btn--m btn--full"><span class="t-button-l">Làm bài ngay</span><img src="assets/icon-arrow-forward-brand.svg" width="24" height="24" alt=""></a>
+              </article>
+              <article class="exam-card" data-grade="Sinh 11">
+                <div class="exam-card__top">
+                  <span class="icon-tile icon-tile--lavender"><img src="assets/dna-lavender.svg" width="21.33" height="21.33" alt=""></span>
+                  <div class="exam-card__info">
+                    <span class="chip chip--lavender t-caption-sb">Sinh 11</span>
+                    <span class="exam-card__topic t-caption">Chuyên đề 2</span>
+                  </div>
+                </div>
+                <div class="exam-card__main">
+                  <h3 class="t-body-l-sb">Chuyển hoá vật chất và năng lượng ở thực vật</h3>
+                  <div class="meta">
+                    <span class="meta__item t-caption"><img src="assets/icon-docs.svg" width="16" height="16" alt="">40 câu</span>
+                    <span class="meta__item t-caption"><img src="assets/icon-timer.svg" width="16" height="16" alt="">50 phút</span>
+                    <span class="meta__item t-caption"><img src="assets/icon-person.svg" width="16" height="16" alt="">860 lượt thi</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn--outline btn--m btn--full"><span class="t-button-l">Làm bài ngay</span><img src="assets/icon-arrow-forward-brand.svg" width="24" height="24" alt=""></a>
+              </article>
+              <article class="exam-card" data-grade="Sinh 12">
+                <div class="exam-card__top">
+                  <span class="icon-tile icon-tile--blue"><img src="assets/dna-blue.svg" width="21.33" height="21.33" alt=""></span>
+                  <div class="exam-card__info">
+                    <span class="chip chip--blue t-caption-sb">Sinh 12</span>
+                    <span class="exam-card__topic t-caption">Chuyên đề 3</span>
+                  </div>
+                </div>
+                <div class="exam-card__main">
+                  <h3 class="t-body-l-sb">Cơ chế di truyền và biến dị cấp phân tử</h3>
+                  <div class="meta">
+                    <span class="meta__item t-caption"><img src="assets/icon-docs.svg" width="16" height="16" alt="">40 câu</span>
+                    <span class="meta__item t-caption"><img src="assets/icon-timer.svg" width="16" height="16" alt="">50 phút</span>
+                    <span class="meta__item t-caption"><img src="assets/icon-person.svg" width="16" height="16" alt="">2.4k lượt thi</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn--outline btn--m btn--full"><span class="t-button-l">Làm bài ngay</span><img src="assets/icon-arrow-forward-brand.svg" width="24" height="24" alt=""></a>
+              </article>
+              <article class="exam-card" data-grade="Sinh 12">
+                <div class="exam-card__top">
+                  <span class="icon-tile icon-tile--blue"><img src="assets/dna-blue.svg" width="21.33" height="21.33" alt=""></span>
+                  <div class="exam-card__info">
+                    <span class="chip chip--blue t-caption-sb">Sinh 12</span>
+                    <span class="exam-card__topic t-caption">Chuyên đề 5</span>
+                  </div>
+                </div>
+                <div class="exam-card__main">
+                  <h3 class="t-body-l-sb">Quy luật di truyền Mendel và mở rộng</h3>
+                  <div class="meta">
+                    <span class="meta__item t-caption"><img src="assets/icon-docs.svg" width="16" height="16" alt="">40 câu</span>
+                    <span class="meta__item t-caption"><img src="assets/icon-timer.svg" width="16" height="16" alt="">50 phút</span>
+                    <span class="meta__item t-caption"><img src="assets/icon-person.svg" width="16" height="16" alt="">1.9k lượt thi</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn--outline btn--m btn--full"><span class="t-button-l">Làm bài ngay</span><img src="assets/icon-arrow-forward-brand.svg" width="24" height="24" alt=""></a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Góc kiến thức -->
+    <section id="goc-kien-thuc" class="section knowledge-section" aria-labelledby="knowledge-title">
+      <div class="container section-inner">
+        <div class="section-header">
+          <div class="section-header__heading">
+            <h2 id="knowledge-title" class="t-heading-m">Góc kiến thức <span class="section-header__accent">Sinh học</span></h2>
+            <p class="section-header__desc t-body-l">Kiến thức thường thức, mẹo học và những câu chuyện thú vị về thế giới sống — cập nhật mỗi tuần.</p>
+          </div>
+          <div class="section-header__actions">
+            <a href="#" class="see-all t-button-l">Xem tất cả <img src="assets/icon-chevron-right-brand.svg" width="24" height="24" alt=""></a>
+          </div>
+        </div>
+        <div class="articles">
+          <a href="#" class="article-card">
+            <img src="assets/article-cover.webp" class="article-card__cover" alt="" loading="lazy">
+            <div class="article__content">
+              <span class="chip chip--blue t-caption-sb">Di truyền học</span>
+              <h3 class="article__title t-heading-xs">Vì sao ADN có cấu trúc xoắn kép? Giải mã “bản thiết kế” của sự sống</h3>
+              <p class="article__excerpt t-body-m">Từ phát hiện của Watson &amp; Crick đến ứng dụng trong y học hiện đại — hiểu đúng cấu trúc ADN giúp em nắm chắc chuyên đề Di truyền phân tử.</p>
+              <div class="meta">
+                <span class="meta__item t-caption"><img src="assets/icon-calendar.svg" width="16" height="16" alt="">20/11/2026</span>
+                <span class="meta__item t-caption"><img src="assets/icon-clock.svg" width="16" height="16" alt="">6 phút đọc</span>
+              </div>
+            </div>
+          </a>
+          <div class="article-list">
+            <a href="#" class="article-item">
+              <img src="assets/article-1.webp" class="article-item__thumb" alt="" loading="lazy">
+              <div class="article__content">
+                <span class="chip chip--lavender t-caption-sb">Mẹo học</span>
+                <h3 class="article__title t-body-l-sb">5 mẹo ghi nhớ chu trình Krebs chỉ trong 10 phút</h3>
+                <div class="meta">
+                  <span class="meta__item t-caption"><img src="assets/icon-calendar.svg" width="16" height="16" alt="">18/11/2026</span>
+                  <span class="meta__item t-caption"><img src="assets/icon-clock.svg" width="16" height="16" alt="">4 phút đọc</span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="article-item">
+              <img src="assets/article-2.webp" class="article-item__thumb" alt="" loading="lazy">
+              <div class="article__content">
+                <span class="chip chip--volcano t-caption-sb">Sinh lý người</span>
+                <h3 class="article__title t-body-l-sb">Hệ miễn dịch phản ứng thế nào khi cơ thể nhiễm virus?</h3>
+                <div class="meta">
+                  <span class="meta__item t-caption"><img src="assets/icon-calendar.svg" width="16" height="16" alt="">15/11/2026</span>
+                  <span class="meta__item t-caption"><img src="assets/icon-clock.svg" width="16" height="16" alt="">7 phút đọc</span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="article-item">
+              <img src="assets/article-3.webp" class="article-item__thumb" alt="" loading="lazy">
+              <div class="article__content">
+                <span class="chip chip--lime t-caption-sb">Thực vật</span>
+                <h3 class="article__title t-body-l-sb">Quang hợp ở thực vật C3, C4 và CAM: phân biệt thật dễ hiểu</h3>
+                <div class="meta">
+                  <span class="meta__item t-caption"><img src="assets/icon-calendar.svg" width="16" height="16" alt="">12/11/2026</span>
+                  <span class="meta__item t-caption"><img src="assets/icon-clock.svg" width="16" height="16" alt="">5 phút đọc</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vinh danh -->
+    <section class="section honour-section" aria-labelledby="honour-title">
+      <div class="container section-inner">
+        <div class="section-header">
+          <div class="section-header__heading">
+            <h2 id="honour-title" class="t-heading-m">Vinh danh <span class="section-header__accent">Học sinh xuất sắc</span></h2>
+            <p class="section-header__desc t-body-l">Những gương mặt đạt điểm cao môn Sinh học trong kỳ thi TN THPT, HSG và thi vào lớp 10 Chuyên.</p>
+          </div>
+          <div class="section-header__actions">
+            <a href="#" class="see-all t-button-l">Xem tất cả <img src="assets/icon-chevron-right-brand.svg" width="24" height="24" alt=""></a>
+            <div class="arrows">
+              <button type="button" class="icon-btn" data-carousel="students-track" data-dir="-1" aria-label="Trước"><img src="assets/icon-chevron-left-circle.svg" width="24" height="24" alt=""></button>
+              <button type="button" class="icon-btn" data-carousel="students-track" data-dir="1" aria-label="Tiếp"><img src="assets/icon-chevron-right-circle.svg" width="24" height="24" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel" id="students-track" role="list" aria-label="Học sinh xuất sắc">
+          <article class="student-card" role="listitem">
+            <img src="assets/student-1.webp" class="student-card__avatar" width="88" height="88" alt="Nguyễn Minh Anh" loading="lazy">
+            <h3 class="t-body-l-sb">Nguyễn Minh Anh</h3>
+            <p class="student-card__score"><span class="student-card__value t-heading-m">10</span><span class="student-card__unit t-caption-med">điểm Sinh</span></p>
+            <p class="student-card__school t-caption">THPT Chuyên Hà Nội – Amsterdam</p>
+            <span class="chip chip--blue t-caption-sb">TN THPT 2025</span>
+          </article>
+          <article class="student-card" role="listitem">
+            <img src="assets/student-2.webp" class="student-card__avatar" width="88" height="88" alt="Trần Gia Bảo" loading="lazy">
+            <h3 class="t-body-l-sb">Trần Gia Bảo</h3>
+            <p class="student-card__score"><span class="student-card__value t-heading-m">9.75</span><span class="student-card__unit t-caption-med">điểm Sinh</span></p>
+            <p class="student-card__school t-caption">THPT Chu Văn An</p>
+            <span class="chip chip--blue t-caption-sb">TN THPT 2025</span>
+          </article>
+          <article class="student-card" role="listitem">
+            <img src="assets/student-3.webp" class="student-card__avatar" width="88" height="88" alt="Lê Khánh Linh" loading="lazy">
+            <h3 class="t-body-l-sb">Lê Khánh Linh</h3>
+            <p class="student-card__score"><span class="student-card__value t-heading-m">9.5</span><span class="student-card__unit t-caption-med">điểm Sinh</span></p>
+            <p class="student-card__school t-caption">Đỗ lớp 10 Chuyên Sinh</p>
+            <span class="chip chip--lime t-caption-sb">Chuyên Sinh 2025</span>
+          </article>
+          <article class="student-card" role="listitem">
+            <img src="assets/student-4.webp" class="student-card__avatar" width="88" height="88" alt="Phạm Đức Huy" loading="lazy">
+            <h3 class="t-body-l-sb">Phạm Đức Huy</h3>
+            <p class="student-card__score"><span class="student-card__value t-heading-m">19.5/20</span><span class="student-card__unit t-caption-med">điểm Sinh</span></p>
+            <p class="student-card__school t-caption">Giải Nhất HSG cấp tỉnh</p>
+            <span class="chip chip--volcano t-caption-sb">HSG 2025</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__columns">
+      <div class="site-footer__brand">
+        <a href="index.html" class="logo logo--footer" aria-label="Sinh Hoa 4.0">
+          <img src="assets/logo-symbol.webp" class="logo__symbol" width="36" height="36" alt="">
+          <img src="assets/logo-wordmark-footer.svg" class="logo__wordmark" alt="Sinh Hoa 4.0">
+        </a>
+        <p class="t-body-m">Học Sinh học dễ hiểu, luyện thi hiệu quả. Đồng hành cùng các em chinh phục điểm 9+ và giấc mơ Chuyên Sinh.</p>
+        <div class="site-footer__social">
+          <a href="#" class="social-btn" aria-label="Kênh video"><img src="assets/social-video.svg" width="20" height="20" alt=""></a>
+          <a href="#" class="social-btn" aria-label="Cộng đồng"><img src="assets/social-community.svg" width="20" height="20" alt=""></a>
+          <a href="#" class="social-btn" aria-label="Nhắn tin"><img src="assets/social-chat.svg" width="20" height="20" alt=""></a>
+        </div>
+      </div>
+      <div class="site-footer__col">
+        <p class="site-footer__title t-caption-sb">KHÁM PHÁ</p>
+        <a href="khoa-hoc.html" class="t-body-m">Khoá học</a>
+        <a href="index.html#de-thi-thu" class="t-body-m">Đề thi thử</a>
+        <a href="index.html#goc-kien-thuc" class="t-body-m">Góc kiến thức</a>
+        <a href="index.html#doi-ngu" class="t-body-m">Đội ngũ giáo viên</a>
+      </div>
+      <div class="site-footer__col">
+        <p class="site-footer__title t-caption-sb">TÀI KHOẢN</p>
+        <a href="#" class="t-body-m">Thông tin tài khoản</a>
+        <a href="#" class="t-body-m">Khoá học của tôi</a>
+        <a href="#" class="t-body-m">Lịch sử làm bài</a>
+        <a href="#" class="t-body-m">Mã kích hoạt</a>
+      </div>
+      <div class="site-footer__col">
+        <p class="site-footer__title t-caption-sb">LIÊN HỆ</p>
+        <a href="tel:0900000000" class="site-footer__contact t-body-m"><img src="assets/icon-phone.svg" width="16" height="16" alt="">0900 000 000</a>
+        <a href="mailto:hotro@sinhhoa.vn" class="site-footer__contact t-body-m"><img src="assets/icon-mail.svg" width="16" height="16" alt="">hotro@sinhhoa.vn</a>
+        <span class="site-footer__contact t-body-m"><img src="assets/icon-address.svg" width="16" height="16" alt="">Hà Nội, Việt Nam</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="site-footer__bottom t-caption">
+        <p>© 2026 Sinh Hoá 4.0. All rights reserved.</p>
+        <div class="site-footer__legal">
+          <a href="#">Chính sách bảo mật</a>
+          <a href="#">Điều khoản sử dụng</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
