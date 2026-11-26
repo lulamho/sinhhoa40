@@ -2,8 +2,8 @@
 .DS_Store
 
 # Original full-size Figma exports (44 MB) — kept locally, not versioned.
-# The site uses the optimised WebP copies in sinh-hoa-html/assets/.
-sinh-hoa-html/design-assets/
+# The site uses the optimised WebP copies in assets/.
+design-assets/
 
 # Local Claude app preview config (machine-specific paths)
 .claude/
